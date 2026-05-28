@@ -1,0 +1,7 @@
+{
+  "name": "分期代买计算器",
+  "description": "一款基于《第五人格》Q版角色设计、高颜值且实用的贷款/分期服务费计算器，支持自动算息与期数管理。",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}
+

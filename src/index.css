@@ -1,0 +1,52 @@
+@import url('https://fonts.googleapis.com/css2?family=Fredoka+One&family=ZCOOL+KuaiLe&family=Inter:wght@400;500;600;700&display=swap');
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Inter", system-ui, -apple-system, sans-serif;
+  --font-display: "ZCOOL KuaiLe", "Fredoka One", cursive;
+}
+
+@layer utilities {
+  /* Cute doll-like stitched border effect */
+  .border-stitched {
+    border: 3px dashed currentColor;
+    box-shadow: 0 0 0 4px rgb(255 255 255 / 0.15), inset 0 0 0 2px rgb(255 255 255 / 0.1);
+  }
+
+  .border-stitched-sm {
+    border: 2px dashed currentColor;
+  }
+
+  /* Soft bobbing hover effects */
+  @keyframes bob {
+    0%, 100% {
+      transform: translateY(0px) rotate(0deg);
+    }
+    50% {
+      transform: translateY(-8px) rotate(1.5deg);
+    }
+  }
+
+  .animate-bob {
+    animation: bob 3.5s ease-in-out infinite;
+  }
+}
+
+/* Custom scrollbar to keep layout cute and integrated */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(148, 163, 184, 0.3);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(148, 163, 184, 0.5);
+}
